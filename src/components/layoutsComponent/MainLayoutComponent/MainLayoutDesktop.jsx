@@ -3,6 +3,7 @@ import { Container, Box, styled } from '@mui/material';
 
 // project import
 import Header from './Header';
+import Footer from './Footer';
 
 // ==============================|| MainLayoutDesktop ||============================== //
 
@@ -15,6 +16,9 @@ function MainLayoutDesktop() {
             <MainStyled component="main">
                 <Outlet />
             </MainStyled>
+            <Box component="footer">
+                <Footer />
+            </Box>
         </ContainerStyled>
     );
 }

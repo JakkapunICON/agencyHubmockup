@@ -2,10 +2,14 @@ import { Typography, Grid, Box, Card, CardContent, Button, Divider, useTheme, st
 import { MoreVert as MoreVertIcon } from '@mui/icons-material';
 
 // import project
-import CardTitle from './CardTitle';
-import CardContentImg from './CardContentImg';
-import CardMyMenu from './CardMyMenu';
-import CardNotification from './CardNotification';
+import CardTitle from './Section1Main/CardTitle';
+import CardContentImg from './Section1Main/CardContentImg';
+import CardMyMenu from './Section1Main/CardMyMenu';
+import CardNotification from './Section1Main/CardNotification';
+import TypographyMyDeveloper from './Section2MyDeveloper/TypographyMyDeveloper';
+import ItemDev from './Section2MyDeveloper/ItemDev';
+import TypographyMyAgency from './Section3MyAgency/TypographyMyAgency';
+import ItemDevMyAgency from './Section3MyAgency/ItemDevMyAgency';
 
 import user1 from '/src/images/content/user1.png';
 
@@ -77,26 +81,39 @@ function HomeDesktop() {
                     </Card>
                 </Box>
             </BoxImgComponentStyled>
+            <br />
             <BoxMyDeveloperComponentStyled component="section">
-                <Box sx={{ paddingTop: theme.spacing(10), paddingLeft: theme.spacing(15), width: 500 }}>
-                    <Typography sx={{ color: '#FFFFFF', fontWeight: 700, lineHeight: '68px', fontSize: '50px' }}>My Developer</Typography>
-                    <Typography sx={{ color: '#FFFFFF' }}>
-                        Et has minim elitr intellegat. Mea aeterno eleifend antiopamad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal
-                        molestiae te.
-                    </Typography>
+                <Box sx={{ marginTop: theme.spacing(10), marginLeft: theme.spacing(15), width: 550 }}>
+                    <TypographyMyDeveloper />
                 </Box>
-                <Box sx={{ display: 'flex', paddingTop: theme.spacing(10), paddingLeft: theme.spacing(15) }}>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginRight: theme.spacing(10) }}>
-                        <CardMedia component="img" src="/src/images/content/dev01.png" sx={{ width: 80, height: 80, marginBottom: theme.spacing(1) }} />
-                        <Typography sx={{ color: '#FFFFFF' }}>Dev01</Typography>
-                    </Box>
-
-                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginRight: theme.spacing(10) }}>
-                        <CardMedia component="img" src="/src/images/content/dev01.png" sx={{ width: 80, height: 80, marginBottom: theme.spacing(1) }} />
-                        <Typography sx={{ color: '#FFFFFF' }}>Dev01</Typography>
-                    </Box>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap', marginTop: theme.spacing(10), marginLeft: theme.spacing(15) }}>
+                    <ItemDev />
+                    <ItemDev />
+                    <ItemDev />
+                    <ItemDev />
+                    <ItemDev />
+                    <ItemDev />
+                    <ItemDev />
+                    <ItemDev />
                 </Box>
             </BoxMyDeveloperComponentStyled>
+            <Box sx={{ height: '510px', background: '#EEF2F4' }}>
+                <BoxMyAgencyComponentStyled>
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', marginTop: theme.spacing(10), marginLeft: theme.spacing(15) }}>
+                        <ItemDevMyAgency />
+                        <ItemDevMyAgency />
+                        <ItemDevMyAgency />
+                        <ItemDevMyAgency />
+                        <ItemDevMyAgency />
+                        <ItemDevMyAgency />
+                        <ItemDevMyAgency />
+                    </Box>
+                    <Box sx={{ marginTop: theme.spacing(10), marginLeft: theme.spacing(15), width: 550 }}>
+                        <TypographyMyAgency />
+                    </Box>
+                </BoxMyAgencyComponentStyled>
+            </Box>
+            <Box></Box>
         </>
     );
 }
@@ -137,4 +154,12 @@ const BoxMyDeveloperComponentStyled = styled(Box)(({ theme }) => ({
     width: '100%',
     height: '393px',
     background: 'linear-gradient(180deg, #0B1D26 0%, #4F6874 100%)'
+}));
+
+const BoxMyAgencyComponentStyled = styled(Box)(({ theme }) => ({
+    display: 'flex',
+    justifyContent: 'start',
+    width: '100%',
+    height: '381px',
+    background: '#EEF2F4'
 }));
