@@ -11,6 +11,8 @@ import ItemDev from './Section2MyDeveloper/ItemDev';
 import TypographyMyAgency from './Section3MyAgency/TypographyMyAgency';
 import ItemDevMyAgency from './Section3MyAgency/ItemDevMyAgency';
 
+import Section4Project from './Section4Project';
+
 import user1 from '/src/images/content/user1.png';
 
 // ==============================|| HomeDesktop ||============================== //
@@ -113,7 +115,7 @@ function HomeDesktop() {
                     </Box>
                 </BoxMyAgencyComponentStyled>
             </Box>
-            <Box></Box>
+            <Section4Project />
         </>
     );
 }
