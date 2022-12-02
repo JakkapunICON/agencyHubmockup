@@ -1,6 +1,7 @@
 import { Box, styled, useTheme, Typography, CardMedia } from '@mui/material';
 
 import BoxButtonSelection from './BoxButtonSelection';
+import CardProject from './CardProject';
 
 function Section4Project() {
     const theme = useTheme();
@@ -18,6 +19,13 @@ function Section4Project() {
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject02.svg" typography="ทาวน์โฮม" />
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject03.svg" typography="คอนโด" />
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject04.svg" typography="อาคารพาณิชย์" />
+                </Box>
+                <Box sx={{ display: 'flex', justifyContent: 'start' }}>
+                    <CardProject typography="Centro" />
+                    <CardProject typography="The plant" />
+                    <CardProject typography="ศุภาลัย ปาร์ค" />
+                    <CardProject typography="Atoll" />
+                    {/* <CardProject typography="Atoll" /> */}
                 </Box>
             </BoxProjectComponentINSIDEStyled>
         </BoxProjectComponentStyled>
