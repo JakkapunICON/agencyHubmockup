@@ -38,7 +38,7 @@ const BoxProjectComponentStyled = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     padding: theme.spacing(4),
-    background: 'gray',
+    // background: 'gray',
     color: '#FFFFFF'
 }));
 

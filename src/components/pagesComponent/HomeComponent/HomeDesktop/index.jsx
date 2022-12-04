@@ -12,6 +12,8 @@ import TypographyMyAgency from './Section3MyAgency/TypographyMyAgency';
 import ItemDevMyAgency from './Section3MyAgency/ItemDevMyAgency';
 
 import Section4Project from './Section4Project';
+import Section5Sell from './Section5Sell';
+import Section6Home from './Section6Home';
 
 import user1 from '/src/images/content/user1.png';
 
@@ -116,6 +118,8 @@ function HomeDesktop() {
                 </BoxMyAgencyComponentStyled>
             </Box>
             <Section4Project />
+            <Section5Sell />
+            <Section6Home />
         </>
     );
 }
