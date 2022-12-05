@@ -16,6 +16,7 @@ import Section5Sell from './Section5Sell';
 import Section6Home from './Section6Home';
 
 import user1 from '/src/images/content/user1.png';
+import Section7AllReadyToSale from './Section7AllReadyToSale';
 
 // ==============================|| HomeDesktop ||============================== //
 
@@ -120,6 +121,7 @@ function HomeDesktop() {
             <Section4Project />
             <Section5Sell />
             <Section6Home />
+            <Section7AllReadyToSale />
         </>
     );
 }

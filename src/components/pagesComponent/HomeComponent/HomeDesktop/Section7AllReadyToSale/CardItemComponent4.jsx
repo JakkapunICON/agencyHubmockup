@@ -1,15 +1,16 @@
-import { Box, useTheme, styled, Button, Typography } from '@mui/material';
+import { Box, useTheme, styled, Button, Typography, CardMedia } from '@mui/material';
 
 function CardItemComponent4() {
     return (
         <CardItemComponent4Styled sx={{ ml: -0.1, mt: 2.6 }}>
             <CardItemComponent4INSIDEStyled>
-                <Button sx={{ width: '140px', height: '42.9px', background: '#FFFFFF', border: '2px solid #961619', borderRadius: '12px' }}>
+                <Button sx={{ width: '113.93px', height: '42.9px', background: '#FFFFFF', border: '2px solid #961619', borderRadius: '12px' }}>
                     <Typography sx={{ color: '#0B1D26' }}>ดูรายละเอียด</Typography>
                 </Button>
-                <Button sx={{ width: '140px', height: '42.9px', background: '#961619', borderRadius: '12px' }}>
+                <Button sx={{ width: '113.93px', height: '42.9px', background: '#961619', borderRadius: '12px' }}>
                     <Typography sx={{ color: '#FFFFFF' }}>จอง</Typography>
                 </Button>
+                <CardMedia component="img" src="/src/images/vector/vectoricon2808.svg" sx={{ width: '43px' }} />
             </CardItemComponent4INSIDEStyled>
         </CardItemComponent4Styled>
     );
