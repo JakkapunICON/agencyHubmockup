@@ -20,7 +20,7 @@ import {
 
 import { Search as SearchIcon } from '@mui/icons-material';
 
-import DevSearchDialog from '../index.jsx';
+import DevSearchDialog from './DevSearchDialog';
 import DevSearchButtonSelect from './DevSearchButtonSelect';
 
 const Transition = React.forwardRef(function Transition(props, ref) {

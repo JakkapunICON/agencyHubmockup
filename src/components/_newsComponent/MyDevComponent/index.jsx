@@ -2,7 +2,7 @@ import { Box, useTheme, styled, Typography, Button, CardMedia } from '@mui/mater
 import AllReadyToSale from '../../_publicComponent/AllReadyToSale';
 import DevMain from './DevMain';
 import DevProject from './DevProject';
-import DevSearchMenu from './DevSearch';
+import DevSearch from './DevSearch';
 
 function MyDevComponent() {
     const theme = useTheme();
@@ -13,7 +13,7 @@ function MyDevComponent() {
                 <DevMain />
             </DevComponentStyled>
             <DevMenuStyled>
-                <DevSearchMenu />
+                <DevSearch />
             </DevMenuStyled>
             <DevProjectStyled>
                 <DevProject />
