@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Container, Box, styled } from '@mui/material';
+import { Container, Box, styled, Typography } from '@mui/material';
 
 // project import
 import Header from './Header';
@@ -13,6 +13,7 @@ function MainLayoutDesktop() {
             <HeaderStyled component="header">
                 <Header />
             </HeaderStyled>
+
             <MainStyled component="main">
                 <Outlet />
             </MainStyled>
@@ -31,7 +32,7 @@ const ContainerStyled = styled(Container)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    backgroundColor: theme.palette.background.main
+    background: theme.palette.background.main
 }));
 
 const HeaderStyled = styled(Box)(({ theme }) => ({

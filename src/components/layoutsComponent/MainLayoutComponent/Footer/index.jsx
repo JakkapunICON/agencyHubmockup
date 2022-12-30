@@ -1,17 +1,32 @@
 import { AppBar, Toolbar, Box, Typography, useTheme, CardMedia } from '@mui/material';
 import TypographyFooter from './TypographyFooter';
 
+import { useLocation } from 'react-router-dom';
+
 function Footer() {
     const theme = useTheme();
+    const location = useLocation();
 
     return (
         <>
+            {/* {location.pathname === '/dev' ? (
+                <></>
+            ) : ( */}
             <AppBar sx={{ background: theme.palette.primary.main }}>
                 <Toolbar variant="dense" sx={{ display: 'flex', justifyContent: 'center', minHeight: 75 }}>
                     <CardMedia component="img" src="/src/images/logo/iconfooter01.png" sx={{ width: 331 }} />
                 </Toolbar>
             </AppBar>
-            <Box sx={{ display: 'flex', justifyContent: 'center', minHeight: 228, paddingX: theme.spacing(4) }}>
+            {/* )} */}
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    minHeight: 228,
+                    paddingX: theme.spacing(4),
+                    boxShadow: '0px 0px 20px 5px rgba(0, 0, 0, 0.1)'
+                }}
+            >
                 <Box sx={{ marginTop: theme.spacing(4), marginLeft: theme.spacing(5), width: 770 }}>
                     <TypographyFooter />
                 </Box>

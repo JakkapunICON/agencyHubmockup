@@ -1,4 +1,4 @@
-import { Box, styled, Typography, Button, useTheme } from '@mui/material';
+import { Box, styled, Typography, Button, useTheme, Grid } from '@mui/material';
 import CardSell from './CardSell';
 
 function Section5Sell() {
@@ -7,28 +7,26 @@ function Section5Sell() {
     return (
         <BoxSellComponentStyled>
             <BoxSellComponentINSIDEStyled>
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', marginX: theme.spacing(4) }}>
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', marginX: 4, mb: 6 }}>
                     <Typography sx={{ fontWeight: 700, fontSize: '32px', lineHeight: '44px' }}>โครงการพร้อมขาย</Typography>
                     <Button variant="contained" color="secondary">
                         See More
                     </Button>
                 </Box>
-                <br />
-                <br />
-                <Box sx={{ display: 'flex', justifyContent: 'start' }}>
-                    <Box sx={{ marginRight: theme.spacing(1) }}>
+                <Grid container spacing={1} sx={{ display: 'flex', justifyContent: 'flex-start', flexWrap: 'nowrap', overflowX: 'auto' }}>
+                    <Grid item>
                         <CardSell />
-                    </Box>
-                    <Box sx={{ marginRight: theme.spacing(1) }}>
+                    </Grid>
+                    <Grid item>
                         <CardSell />
-                    </Box>
-                    <Box sx={{ marginRight: theme.spacing(1) }}>
+                    </Grid>
+                    <Grid item>
                         <CardSell />
-                    </Box>
-                    <Box sx={{ marginRight: theme.spacing(1) }}>
+                    </Grid>
+                    <Grid item>
                         <CardSell />
-                    </Box>
-                </Box>
+                    </Grid>
+                </Grid>
             </BoxSellComponentINSIDEStyled>
         </BoxSellComponentStyled>
     );
@@ -40,13 +38,12 @@ const BoxSellComponentStyled = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     padding: theme.spacing(4),
-    // background: 'blue',
     color: theme.palette.primary.main
 }));
 
 const BoxSellComponentINSIDEStyled = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
-    padding: theme.spacing(6)
-    // background: '#EEF2F4'
+    justifyContent: 'center',
+    padding: theme.spacing(4)
 }));

@@ -56,7 +56,9 @@ function HeaderMenu() {
     return (
         <AppBar component="nav" sx={{ boxShadow: 0, pr: 2, pl: 4 }}>
             <Toolbar variant="dense">
-                <CardMedia component="img" image={logoIconframework} alt="iconframework" sx={{ width: 'auto' }} />
+                <Box component={RouterLink} to="/">
+                    <CardMedia component="img" image={logoIconframework} alt="iconframework" sx={{ width: 'auto' }} />
+                </Box>
                 <Search>
                     <SearchIconWrapper>
                         <SearchIcon color="secondary" sx={{ fontSize: '36px' }} />
@@ -84,6 +86,8 @@ function HeaderMenu() {
                             ))}
                             {matches1430 ? <MiniMenu /> : <></>}
                             <Button
+                                component={RouterLink}
+                                to="/addcustomer"
                                 variant="contained"
                                 size="large"
                                 color="success"

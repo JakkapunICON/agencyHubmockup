@@ -5,7 +5,7 @@ function BoxButtonSelection({ imgSrc, typography }) {
 
     return (
         <BoxButtonSelectStyled>
-            <CardMedia component="img" src={imgSrc} alt="" sx={{ width: 31, marginRight: theme.spacing(2) }} />
+            <CardMedia component="img" src={imgSrc} alt="" sx={{ width: 31, mr: 2 }} />
             <Typography sx={{ fontWeight: 700 }}>{typography}</Typography>
         </BoxButtonSelectStyled>
     );
