@@ -1,5 +1,7 @@
 import { Box, CardMedia, styled, Typography, useTheme } from '@mui/material';
 
+import { Link as RouterLink, useLocation } from 'react-router-dom';
+
 function AllAgency() {
     const theme = useTheme();
 
@@ -16,7 +18,9 @@ function AllAgency() {
         >
             <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Typography sx={{ fontSize: '34px', fontWeight: 700 }}>ALL Agency</Typography>
-                <Typography sx={{ fontSize: '24px', fontWeight: 700, color: '#2F80ED' }}>ดูทั้งหมด {'>'}</Typography>
+                <Typography component={RouterLink} to="/agency/search" sx={{ fontSize: '24px', fontWeight: 700, color: '#2F80ED' }}>
+                    ดูทั้งหมด {'>'}
+                </Typography>
             </Box>
             <br />
             <br />

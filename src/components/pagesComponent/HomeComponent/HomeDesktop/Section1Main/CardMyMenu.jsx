@@ -5,7 +5,7 @@ function CardMyMenu({ imgSrc, typography }) {
 
     return (
         <CardMyMenuStyled>
-            <CardMedia component="img" image={imgSrc} alt={imgSrc} sx={{ width: 25, height: 25, marginRight: theme.spacing(1.2) }} />
+            <CardMedia component="img" image={imgSrc} alt={imgSrc} sx={{ width: 25, height: 25, mr: theme.spacing(1.2) }} />
             <Typography variant="text14">{typography}</Typography>
         </CardMyMenuStyled>
     );

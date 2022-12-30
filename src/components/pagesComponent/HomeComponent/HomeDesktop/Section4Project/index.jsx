@@ -13,19 +13,22 @@ function Section4Project() {
                     <Typography sx={{ fontSize: '50px', fontWeight: 700, lineHeight: '68px' }}>Project</Typography>
                     <Typography sx={{ fontSize: '25px' }}>SEE MORE</Typography>
                 </Box>
-                <Box sx={{ display: 'flex', justifyContent: 'start' }}>
+                <Box sx={{ display: 'flex', justifyContent: 'flex-start', overflowX: 'auto', pb: 0.5 }}>
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject01.svg" typography="บ้านเดี่ยว" />
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject02.svg" typography="บ้านแฝด" />
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject02.svg" typography="ทาวน์โฮม" />
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject03.svg" typography="คอนโด" />
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject04.svg" typography="อาคารพาณิชย์" />
+                    <BoxButtonSelection imgSrc="/src/images/vector/vectorproject04.svg" typography="อาคารพาณิชย์" />
+                    <BoxButtonSelection imgSrc="/src/images/vector/vectorproject04.svg" typography="อาคารพาณิชย์" />
                 </Box>
-                <Box sx={{ display: 'flex', justifyContent: 'start' }}>
+                <Box sx={{ display: 'flex', justifyContent: 'flex-start', overflowX: 'auto', pb: 0.5 }}>
                     <CardProject typography="Centro" />
                     <CardProject typography="The plant" />
                     <CardProject typography="ศุภาลัย ปาร์ค" />
                     <CardProject typography="Atoll" />
-                    {/* <CardProject typography="Atoll" /> */}
+                    <CardProject typography="Atoll" />
+                    <CardProject typography="Atoll" />
                 </Box>
             </BoxProjectComponentINSIDEStyled>
         </BoxProjectComponentStyled>

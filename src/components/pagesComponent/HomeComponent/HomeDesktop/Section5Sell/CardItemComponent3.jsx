@@ -21,7 +21,7 @@ function CardItemComponent3() {
             </CardItemComponent3Styled>
             <CardItemComponent3Styled>
                 <Box sx={{ display: 'flex', justifyContent: 'start' }}>
-                    <ButtonHomeStyled sx={{ marginRight: theme.spacing(1) }}>
+                    <ButtonHomeStyled sx={{ mr: 1 }}>
                         <CardMedia component="img" src="/src/images/vector/vectorprojectblue01.svg" sx={{ width: '14px', mr: 0.3 }} />
                         <Typography sx={{ fontWeight: 700, fontSize: 10, color: '#2F80ED' }}>บ้านเดี่ยว</Typography>
                     </ButtonHomeStyled>
@@ -35,7 +35,7 @@ function CardItemComponent3() {
                 <Typography sx={{ lineHeight: '27px', fontWeight: 700, fontSize: '20px' }}>฿ 5,000,000 - 10,000,000</Typography>
             </CardItemComponent3Styled>
             <CardItemComponent3Styled>
-                <ButtonHomeStyled sx={{ width: 'auto', border: '1px solid #EB5757', paddingX: theme.spacing(2) }}>
+                <ButtonHomeStyled sx={{ width: 'auto', border: '1px solid #EB5757', paddingX: 2 }}>
                     <Typography sx={{ fontWeight: 700, fontSize: 10, color: '#EB5757' }}>ลดสูงสุด 50%</Typography>
                 </ButtonHomeStyled>
             </CardItemComponent3Styled>

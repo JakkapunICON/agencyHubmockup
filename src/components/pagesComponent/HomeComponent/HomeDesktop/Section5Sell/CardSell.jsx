@@ -25,7 +25,7 @@ function CardSell() {
                 <CardItemComponent2INSIDE>
                     <CardMedia component="img" src="/src/images/content/icon57.png" sx={{ width: '30.56px' }} />
                 </CardItemComponent2INSIDE>
-                <CardItemComponent2INSIDE sx={{ marginRight: theme.spacing(0) }}>
+                <CardItemComponent2INSIDE sx={{ mr: 0 }}>
                     <CardMedia component="img" src="/src/images/content/icon57.png" sx={{ width: '30.56px' }} />
                 </CardItemComponent2INSIDE>
             </CardItemComponent2>
