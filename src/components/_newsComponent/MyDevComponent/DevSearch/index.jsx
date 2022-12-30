@@ -41,36 +41,41 @@ function DevSearch() {
     };
 
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-            <AppBar sx={{ boxShadow: 0, pr: 2, pl: 4, background: '#EEF2F4' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', overflowX: 'auto' }}>
+            <AppBar component="nav" sx={{ boxShadow: 0, background: '#EEF2F4', pr: { xl: 20, lg: 2, xs: 2 }, pl: { xl: 20, lg: 2, xs: 2 } }}>
                 <Toolbar variant="dense">
-                    <Typography sx={{ fontWeight: 600, fontSize: '24px', lineHeight: '33px', mr: 3 }}>ค้นหาอสังหาฯ</Typography>
-                    <Button sx={{ background: '#014C71', borderRadius: '10px', height: '45px' }}>
-                        <Typography sx={{ color: '#FFFFFF', fontWeight: 700, fontSize: '16px' }}>เลือกประเภท</Typography>
+                    <Typography sx={{ fontWeight: 600, fontSize: '24px', lineHeight: '33px', whiteSpace: 'nowrap', mr: 4 }}>ค้นหาอสังหาฯ</Typography>
+                    <Button variant="outlined" sx={{ background: '#014C71', borderRadius: '10px', minWidth: '154px', height: '45px' }}>
+                        <Typography
+                            sx={{ fontWeight: 700, fontSize: '16px', lineHeight: '22px', whiteSpace: 'nowrap', color: theme.palette.white.main }}
+                        >
+                            เลือกประเภท
+                        </Typography>
                     </Button>
                     <Search>
-                        <SearchIconWrapper>
-                            <SearchIcon color="secondary" sx={{ fontSize: '36px' }} />
-                        </SearchIconWrapper>
                         <StyledInputBase placeholder="พิมพ์ชื่อโครงการ หรือทำเลที่ต้องการ" inputProps={{ 'aria-label': 'search' }} />
                     </Search>
                     <Button
-                        variant="contained"
                         onClick={handleClickOpen}
-                        sx={{ background: '#520002', borderRadius: '10px', height: '45px', width: '181px' }}
+                        variant="outlined"
+                        sx={{ borderRadius: '10px', minWidth: '154px', height: '45px', background: '#520002' }}
                     >
-                        <Typography sx={{ color: '#FFFFFF', fontWeight: 700, fontSize: '16px' }}>SEARCH</Typography>
+                        <Typography
+                            sx={{ fontWeight: 700, fontSize: '16px', lineHeight: '22px', whiteSpace: 'nowrap', color: theme.palette.white.main }}
+                        >
+                            SEARCH
+                        </Typography>
                     </Button>
                     <DevSearchDialog open={open} Transition={Transition} handleClose={handleClose} />
                 </Toolbar>
-                <Box sx={{ display: 'flex', justifyContent: 'flex-start' }}>
-                    <DevSearchButtonSelect sx={{ mt: 4 }} />
-                    <DevSearchButtonSelect sx={{ mt: 4 }} />
-                    <DevSearchButtonSelect sx={{ mt: 4 }} />
-                    <DevSearchButtonSelect sx={{ mt: 4 }} />
-                    <DevSearchButtonSelect sx={{ mt: 4 }} />
-                </Box>
             </AppBar>
+            <Box sx={{ display: 'flex', justifyContent: 'flex-start', pr: { xl: 20, lg: 2, xs: 2 }, pl: { xl: 20, lg: 2, xs: 2 } }}>
+                <DevSearchButtonSelect sx={{ mt: 4 }} />
+                <DevSearchButtonSelect sx={{ mt: 4 }} />
+                <DevSearchButtonSelect sx={{ mt: 4 }} />
+                <DevSearchButtonSelect sx={{ mt: 4 }} />
+                <DevSearchButtonSelect sx={{ mt: 4 }} />
+            </Box>
         </Box>
     );
 }
@@ -84,38 +89,25 @@ const Search = styled('div')(({ theme }) => ({
     marginRight: theme.spacing(3),
     border: '1.5px solid #E0E0E0',
     marginLeft: theme.spacing(3),
-    width: '40%',
+    width: '561px',
     [theme.breakpoints.down('lg')]: {
-        width: '438px'
-    },
-    [theme.breakpoints.down('md')]: {
-        width: '100%'
+        width: '500px'
     }
-}));
-
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-    padding: theme.spacing(0, 2, 0, 2),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    left: 0,
-    top: 0
+    // [theme.breakpoints.down('md')]: {
+    //     width: '100%'
+    // }
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-    width: '100%',
+    width: '561px',
     [theme.breakpoints.down('lg')]: {
-        width: '438px'
+        width: '500px'
     },
-    [theme.breakpoints.down('md')]: {
-        width: '100%'
-    },
+    // [theme.breakpoints.down('md')]: {
+    //     width: '100%'
+    // },
     '& .MuiInputBase-input': {
         padding: theme.spacing(1, 1, 1, 0),
-        marginLeft: '40px',
 
         // vertical padding + font size from searchIcon
         paddingLeft: `calc(1em + ${theme.spacing(1)})`,

@@ -28,7 +28,7 @@ export default MyDevComponent;
 const DevComponentStyled = styled(Box)(({ theme }) => ({
     display: 'flex',
     position: 'relative',
-    justifyContent: 'start',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     minHeight: '650px',
     overflowX: 'auto',
@@ -47,6 +47,8 @@ const DevMenuStyled = styled(Box)(({ theme }) => ({
 
 const DevProjectStyled = styled(Box)(({ theme }) => ({
     width: '100%',
-    height: '624px',
+    // height: '624px',
+    display: 'flex',
+    justifyContent: 'center',
     background: theme.palette.primary.main
 }));
