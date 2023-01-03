@@ -2,7 +2,7 @@ import { Box, CardMedia, Typography, useTheme } from '@mui/material';
 
 import { Link as RouterLink } from 'react-router-dom';
 
-function ItemDev() {
+function ItemDev({ number }) {
     const theme = useTheme();
     return (
         <Box
@@ -13,6 +13,7 @@ function ItemDev() {
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
+                textDecoration: 'none',
                 mr: 8,
                 mb: 2,
                 ':hover': {
@@ -21,7 +22,7 @@ function ItemDev() {
             }}
         >
             <CardMedia component="img" src="/src/images/content/dev01.png" sx={{ width: 80, height: 80, mb: 1 }} />
-            <Typography sx={{ color: '#FFFFFF' }}>Dev01</Typography>
+            <Typography sx={{ color: '#FFFFFF' }}>Dev {number}</Typography>
         </Box>
     );
 }

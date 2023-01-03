@@ -28,5 +28,9 @@ const CardWhite = styled(Box)(({ theme }) => ({
     height: '193px',
     borderRadius: '20px',
     boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.25)',
-    background: theme.palette.white.main
+    background: theme.palette.white.main,
+    cursor: 'pointer',
+    ':hover': {
+        transform: 'scale(1.05)'
+    }
 }));

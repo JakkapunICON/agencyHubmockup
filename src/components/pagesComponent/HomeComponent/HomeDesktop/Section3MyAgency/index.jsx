@@ -1,5 +1,7 @@
 import { Typography, Grid, Box, Card, CardContent, Button, Divider, useTheme, styled, CardMedia, useMediaQuery } from '@mui/material';
 
+import React from 'react';
+
 import ItemDevMyAgency from './ItemDevMyAgency';
 import TypographyMyAgency from './TypographyMyAgency';
 
@@ -7,9 +9,24 @@ function Section3MyAgency() {
     const theme = useTheme();
     const matchesDown1400 = useMediaQuery('(max-width:1400px)');
 
+    const Item = () => {
+        let item = [];
+
+        for (let i = 1; i <= 10; i++) {
+            item.push(
+                <React.Fragment key={i}>
+                    <ItemDevMyAgency number={i} />
+                </React.Fragment>
+            );
+        }
+        return item;
+    };
+
     return (
         <BoxMyAgencyComponentStyled component="section" matches={matchesDown1400 ? 1 : 0}>
             <BoxItemDevStyled matches={matchesDown1400 ? 1 : 0} sx={{ order: matchesDown1400 === false ? 1 : 2 }}>
+                {Item()}
+                {/* <ItemDevMyAgency />
                 <ItemDevMyAgency />
                 <ItemDevMyAgency />
                 <ItemDevMyAgency />
@@ -18,8 +35,7 @@ function Section3MyAgency() {
                 <ItemDevMyAgency />
                 <ItemDevMyAgency />
                 <ItemDevMyAgency />
-                <ItemDevMyAgency />
-                <ItemDevMyAgency />
+                <ItemDevMyAgency /> */}
             </BoxItemDevStyled>
             <BoxTypographyStyled matches={matchesDown1400 ? 1 : 0} sx={{ order: matchesDown1400 === false ? 2 : 1 }}>
                 <TypographyMyAgency />

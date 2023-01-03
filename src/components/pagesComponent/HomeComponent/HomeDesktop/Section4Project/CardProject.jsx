@@ -34,5 +34,10 @@ const CardProjectStyled = styled(Box)(({ theme }) => ({
     border: '1px solid #C3CAD2',
     borderRadius: '20px',
     marginTop: theme.spacing(4),
-    marginRight: theme.spacing(1.2)
+    marginRight: theme.spacing(1.2),
+    marginLeft: theme.spacing(0.5),
+    cursor: 'pointer',
+    ':hover': {
+        transform: 'scale(1.02)'
+    }
 }));
