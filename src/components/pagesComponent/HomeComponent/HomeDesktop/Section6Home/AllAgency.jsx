@@ -18,7 +18,7 @@ function AllAgency() {
         >
             <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Typography sx={{ fontSize: '34px', fontWeight: 700 }}>ALL Agency</Typography>
-                <Typography component={RouterLink} to="/agency/search" sx={{ fontSize: '24px', fontWeight: 700, color: '#2F80ED' }}>
+                <Typography component={RouterLink} to="/agencyHubmockup/agency/search" sx={{ fontSize: '24px', fontWeight: 700, color: '#2F80ED' }}>
                     ดูทั้งหมด {'>'}
                 </Typography>
             </Box>

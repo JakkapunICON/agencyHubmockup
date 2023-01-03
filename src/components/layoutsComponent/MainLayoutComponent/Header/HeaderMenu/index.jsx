@@ -87,7 +87,7 @@ function HeaderMenu() {
                             {matches1430 ? <MiniMenu /> : <></>}
                             <Button
                                 component={RouterLink}
-                                to="/addcustomer"
+                                to="/agencyHubmockup/addcustomer"
                                 variant="contained"
                                 size="large"
                                 color="success"

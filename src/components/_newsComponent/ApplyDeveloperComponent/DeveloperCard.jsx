@@ -4,7 +4,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 function DevloperCard() {
     return (
-        <CardStyled component={RouterLink} to="/developer/apply">
+        <CardStyled component={RouterLink} to="/agencyHubmockup/developer/apply">
             <CardMedia component="img" src="/src/images/developer/developer01.png" sx={{ width: '108.28px', mb: 1 }} />
             <Typography>developer 01</Typography>
         </CardStyled>

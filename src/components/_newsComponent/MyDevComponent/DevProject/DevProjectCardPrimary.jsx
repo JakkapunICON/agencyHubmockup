@@ -9,7 +9,11 @@ function DevProjectCardPrimary() {
         <CardPrimary>
             <Typography sx={{ fontSize: '50px', fontWeight: 700, lineHeight: '68px' }}>Project</Typography>
             <Typography sx={{ fontWeight: 300, marginBottom: theme.spacing(2) }}>Et has minim elitr intellegat. Mea aeternoeleifend </Typography>
-            <Typography component={RouterLink} to="/mydev/projectsearch" sx={{ fontSize: '16px', fontWeight: 700, lineHeight: '20px' }}>
+            <Typography
+                component={RouterLink}
+                to="/agencyHubmockup/mydev/projectsearch"
+                sx={{ fontSize: '16px', fontWeight: 700, lineHeight: '20px' }}
+            >
                 SEE MORE
             </Typography>
         </CardPrimary>

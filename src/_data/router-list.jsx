@@ -19,73 +19,73 @@ import Filter from '../pages/_newsPage/Filter';
 
 export const MAIN_ROUTER = [
     {
-        path: '/',
+        path: '/agencyHubmockup',
         element: <HomePage />
     },
     {
-        path: '/home',
+        path: '/agencyHubmockup/home',
         element: <Navigate to="/" />
     },
 
     {
-        path: '/pre-owned',
+        path: '/agencyHubmockup/pre-owned',
         element: <PreownedPage />
     },
     {
-        path: '/rent',
+        path: '/agencyHubmockup/rent',
         element: <RentPage />
     },
     {
-        path: '/about',
+        path: '/agencyHubmockup/about',
         element: <AboutPage />
     },
     {
-        path: '/contact',
+        path: '/agencyHubmockup/contact',
         element: <ContactPage />
     },
     // NEW PAGE
     {
-        path: '/addcustomer',
+        path: '/agencyHubmockup/addcustomer',
         element: <AddCustomer />
     },
     {
-        path: '/mydev',
+        path: '/agencyHubmockup/mydev',
         element: <MyDev />
     },
     {
-        path: '/mydev/projectsearch',
+        path: '/agencyHubmockup/mydev/projectsearch',
         element: <DevProjectSearch />
     },
 
     {
-        path: '/agency/apply',
+        path: '/agencyHubmockup/agency/apply',
         element: <ApplyAgency />
     },
     {
-        path: '/agency/search',
+        path: '/agencyHubmockup/agency/search',
         element: <AgencySearch />
     },
     {
-        path: '/developer/apply',
+        path: '/agencyHubmockup/developer/apply',
         element: <ApplyDeveloper />
     },
     {
-        path: '/developer/search',
+        path: '/agencyHubmockup/developer/search',
         element: <DeveloperSearch />
     },
     {
-        path: '/filter',
+        path: '/agencyHubmockup/filter',
         element: <Filter />
     }
 ];
 
 export const AUTH_ROUTER = [
     {
-        path: '/login',
+        path: '/agencyHubmockup/login',
         element: <LoginPage />
     },
     {
-        path: '/register',
+        path: '/agencyHubmockup/register',
         element: <RegisterPage />
     }
 ];
