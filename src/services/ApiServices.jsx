@@ -1,8 +1,6 @@
 import axios from 'axios';
 import { Component } from 'react';
 
-// import configData from '../_mock/Smartsales 1.5.postman_collection-2.json';
-
 class ApiServices extends Component {
     static GetDataJson = async () => {
         try {
