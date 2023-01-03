@@ -4,7 +4,8 @@ import {
     Notifications as NotificationsIcon,
     AccountCircle as AccountCircleIcon,
     Settings as SettingsIcon,
-    ExpandMore as ExpandMoreIcon
+    ExpandMore as ExpandMoreIcon,
+    LocalGroceryStore as LocalGroceryStoreIcon
 } from '@mui/icons-material';
 import Language from './Language';
 
@@ -16,8 +17,24 @@ function HeaderTop() {
             <ToolbarStyle variant="dense">
                 <Box sx={{ flexGrow: 1 }} />
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <Button variant="contained" size="small" color="primary">
-                        <Typography variant="button">Agent</Typography>
+                    <Button
+                        variant="contained"
+                        startIcon={<LocalGroceryStoreIcon sx={{ marginLeft: '-10px' }} />}
+                        sx={{
+                            background: 'linear-gradient(180deg, #F2994A 0%, #B55500 100%)',
+                            boxShadow: '0px 4px 18px rgba(0, 0, 0, 0.25)',
+                            borderRadius: '5px',
+                            width: '182px',
+                            height: '35px',
+                            mr: 2
+                        }}
+                    >
+                        <Typography sx={{ fontWeight: 700 }}>E-marketplace</Typography>
+                    </Button>
+                    <Button variant="contained" color="primary" sx={{ width: '26px' }}>
+                        <Typography variant="button" sx={{ mt: -0.1 }}>
+                            Agent
+                        </Typography>
                     </Button>
                     <IconButton size="large" aria-label="new account" color="secondary">
                         <AccountCircleIcon />
