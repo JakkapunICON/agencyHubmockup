@@ -44,7 +44,11 @@ const CardItemComponentStyled = styled(Box)(({ theme }) => ({
     height: 550,
     background: '#FFFFFF',
     border: '1px solid #E0E0E0',
-    borderRadius: '12px'
+    borderRadius: '12px',
+    cursor: 'pointer',
+    ':hover': {
+        transform: 'scale(1.05)'
+    }
 }));
 
 const CardItemComponent1 = styled(Box)(({ theme }) => ({

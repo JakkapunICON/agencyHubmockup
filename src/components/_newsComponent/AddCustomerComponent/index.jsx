@@ -74,27 +74,27 @@ function AddCustomerComponent() {
                     <Box sx={{ marginTop: theme.spacing(12), marginRight: theme.spacing(15) }}>
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginBottom: theme.spacing(4) }}>
                             <Typography sx={{ fontSize: '16px', fontWeight: 600, marginRight: theme.spacing(2) }}>ชื่อ - นามสกุล *</Typography>
-                            <input value="XXXXXX" style={{ width: 400, height: 35 }} />
+                            <input defaultValue="XXXXXX" style={{ width: 400, height: 35 }} />
                         </Box>
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginBottom: theme.spacing(4) }}>
                             <Typography sx={{ fontSize: '16px', fontWeight: 600, marginRight: theme.spacing(2) }}>ชื่อเล่น</Typography>
-                            <input value="XXXXXX" style={{ width: 400, height: 35 }} />
+                            <input defaultValue="XXXXXX" style={{ width: 400, height: 35 }} />
                         </Box>
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginBottom: theme.spacing(4) }}>
                             <Typography sx={{ fontSize: '16px', fontWeight: 600, marginRight: theme.spacing(2) }}>อีเมลล์</Typography>
-                            <input value="XXXXXX" style={{ width: 400, height: 35 }} />
+                            <input defaultValue="XXXXXX" style={{ width: 400, height: 35 }} />
                         </Box>
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginBottom: theme.spacing(4) }}>
                             <Typography sx={{ fontSize: '16px', fontWeight: 600, marginRight: theme.spacing(2) }}>เบอร์โทรศัพท์</Typography>
-                            <input value="XXXXXX" style={{ width: 400, height: 35 }} />
+                            <input defaultValue="XXXXXX" style={{ width: 400, height: 35 }} />
                         </Box>
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginBottom: theme.spacing(4) }}>
                             <Typography sx={{ fontSize: '16px', fontWeight: 600, marginRight: theme.spacing(2) }}>วันที่</Typography>
-                            <input value="XXXXXX" style={{ width: 400, height: 35 }} />
+                            <input defaultValue="XXXXXX" style={{ width: 400, height: 35 }} />
                         </Box>
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginBottom: theme.spacing(4) }}>
                             <Typography sx={{ fontSize: '16px', fontWeight: 600, marginRight: theme.spacing(2) }}>เวลา</Typography>
-                            <input value="000-000-000" style={{ width: 400, height: 35 }} />
+                            <input defaultValue="000-000-000" style={{ width: 400, height: 35 }} />
                         </Box>
                     </Box>
                     <Box sx={{ marginTop: theme.spacing(8), display: 'flex', justifyContent: 'center' }}>
@@ -129,7 +129,8 @@ export default AddCustomerComponent;
 const AddCustomerStyled = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
-    padding: theme.spacing(4)
+    padding: theme.spacing(4),
+    overflowX: 'auto'
 }));
 
 const CardAddCustomerStyled = styled(Box)(({ theme }) => ({

@@ -24,5 +24,9 @@ const CardNotificationStyled = styled(Box)(({ theme }) => ({
     borderRadius: '10px',
     border: '1px solid #C3CAD2',
     padding: theme.spacing(3),
-    margin: theme.spacing(0.5)
+    margin: theme.spacing(0.5),
+    cursor: 'pointer',
+    ':hover': {
+        transform: 'scale(1.05)'
+    }
 }));

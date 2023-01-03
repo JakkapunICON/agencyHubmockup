@@ -34,7 +34,11 @@ function AllAgency() {
                         borderRadius: '50px',
                         width: '280px',
                         height: '69px',
-                        marginRight: theme.spacing(1.5)
+                        marginRight: theme.spacing(1.5),
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
                     }}
                 >
                     <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
@@ -48,7 +52,11 @@ function AllAgency() {
                         border: '2px solid #0B1D26',
                         borderRadius: '50px',
                         width: '280px',
-                        height: '69px'
+                        height: '69px',
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
                     }}
                 >
                     <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
@@ -65,7 +73,11 @@ function AllAgency() {
                         borderRadius: '50px',
                         width: '280px',
                         height: '69px',
-                        marginRight: theme.spacing(1.5)
+                        marginRight: theme.spacing(1.5),
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
                     }}
                 >
                     <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
@@ -79,7 +91,11 @@ function AllAgency() {
                         border: '2px solid #0B1D26',
                         borderRadius: '50px',
                         width: '280px',
-                        height: '69px'
+                        height: '69px',
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
                     }}
                 >
                     <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
@@ -96,7 +112,11 @@ function AllAgency() {
                         borderRadius: '50px',
                         width: '280px',
                         height: '69px',
-                        marginRight: theme.spacing(1.5)
+                        marginRight: theme.spacing(1.5),
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
                     }}
                 >
                     <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
@@ -110,7 +130,11 @@ function AllAgency() {
                         border: '2px solid #0B1D26',
                         borderRadius: '50px',
                         width: '280px',
-                        height: '69px'
+                        height: '69px',
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
                     }}
                 >
                     <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
@@ -127,7 +151,11 @@ function AllAgency() {
                         borderRadius: '50px',
                         width: '280px',
                         height: '69px',
-                        marginRight: theme.spacing(1.5)
+                        marginRight: theme.spacing(1.5),
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
                     }}
                 >
                     <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
@@ -141,7 +169,11 @@ function AllAgency() {
                         border: '2px solid #0B1D26',
                         borderRadius: '50px',
                         width: '280px',
-                        height: '69px'
+                        height: '69px',
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
                     }}
                 >
                     <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />

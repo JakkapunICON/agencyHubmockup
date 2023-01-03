@@ -13,7 +13,7 @@ function Section5Sell() {
                         See More
                     </Button>
                 </Box>
-                <Grid container spacing={1} sx={{ display: 'flex', justifyContent: 'flex-start', flexWrap: 'nowrap', overflowX: 'auto' }}>
+                <Grid container spacing={1} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Grid item>
                         <CardSell />
                     </Grid>
@@ -44,6 +44,6 @@ const BoxSellComponentStyled = styled(Box)(({ theme }) => ({
 const BoxSellComponentINSIDEStyled = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
-    padding: theme.spacing(4)
+    justifyContent: 'center'
+    // padding: theme.spacing(4)
 }));

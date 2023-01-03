@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Typography, Grid, Box, Card, CardContent, Button, Divider, useTheme, styled, CardMedia, useMediaQuery } from '@mui/material';
 
 import TypographyMyDeveloper from './TypographyMyDeveloper';
@@ -7,24 +9,26 @@ import { WrapText } from '@mui/icons-material';
 function Section2MyDeveloper() {
     const theme = useTheme();
     const matchesDown1400 = useMediaQuery('(max-width:1400px)');
+
+    const Item = () => {
+        let item = [];
+
+        for (let i = 1; i <= 10; i++) {
+            item.push(
+                <React.Fragment key={i}>
+                    <ItemDev number={i} />
+                </React.Fragment>
+            );
+        }
+        return item;
+    };
+
     return (
         <BoxMyDeveloperComponentStyled component="section" matches={matchesDown1400 ? 1 : 0}>
             <BoxTypographyStyled matches={matchesDown1400 ? 1 : 0}>
                 <TypographyMyDeveloper />
             </BoxTypographyStyled>
-
-            <BoxItemDevStyled matches={matchesDown1400 ? 1 : 0}>
-                <ItemDev />
-                <ItemDev />
-                <ItemDev />
-                <ItemDev />
-                <ItemDev />
-                <ItemDev />
-                <ItemDev />
-                <ItemDev />
-                <ItemDev />
-                <ItemDev />
-            </BoxItemDevStyled>
+            <BoxItemDevStyled matches={matchesDown1400 ? 1 : 0}>{Item()}</BoxItemDevStyled>
         </BoxMyDeveloperComponentStyled>
     );
 }

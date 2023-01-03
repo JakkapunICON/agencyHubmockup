@@ -22,6 +22,11 @@ const BoxButtonSelectStyled = styled(Box)(({ theme }) => ({
     paddingX: theme.spacing(4),
     marginTop: theme.spacing(4),
     marginRight: theme.spacing(1),
+    marginLeft: theme.spacing(0.5),
     border: '2px solid #FFFFFF',
-    borderRadius: '50px'
+    borderRadius: '50px',
+    cursor: 'pointer',
+    ':hover': {
+        transform: 'scale(1.02)'
+    }
 }));

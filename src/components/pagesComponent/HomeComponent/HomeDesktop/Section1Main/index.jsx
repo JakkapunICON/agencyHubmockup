@@ -29,10 +29,31 @@ function Section1Main() {
                 <Card variant="outlined" sx={{ borderRadius: 5, minHeight: 763 }}>
                     <CardContent sx={{ display: 'flex', alignItems: 'center', height: 128 }}>
                         <Box sx={{ display: 'flex', p: 2 }}>
-                            <img src={user1} alt="user1" width={82} height={82} />
+                            <CardMedia
+                                component="img"
+                                src={user1}
+                                alt="user1"
+                                sx={{
+                                    width: '82px',
+                                    height: '82px',
+                                    cursor: 'pointer',
+                                    ':hover': {
+                                        transform: 'scale(1.05)'
+                                    }
+                                }}
+                            />
                             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', ml: 5 }}>
                                 <Typography sx={{ fontSize: '24px', fontWeight: 700, lineHeight: '33px' }}>xxxxxx xxxxxx</Typography>
-                                <Box sx={{ display: 'flex', mt: theme.spacing(0.8) }}>
+                                <Box
+                                    sx={{
+                                        display: 'flex',
+                                        mt: theme.spacing(0.8),
+                                        cursor: 'pointer',
+                                        ':hover': {
+                                            transform: 'scale(1.01)'
+                                        }
+                                    }}
+                                >
                                     <Typography variant="text16" sx={{ mr: 3 }}>
                                         ID:9852122
                                     </Typography>
@@ -85,8 +106,8 @@ const BoxImgComponentStyled = styled(Box)(({ theme }) => ({
     overflowY: 'hidden',
     paddingLeft: '40px',
     paddingRight: '40px',
-    paddingTop: '20px',
-    marginTop: theme.spacing(1)
+    paddingTop: '28px',
+    paddingBottom: '28px'
 }));
 
 const CardAllMyMenu = styled(Box)(({ theme }) => ({

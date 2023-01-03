@@ -19,8 +19,6 @@ function Section4Project() {
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject02.svg" typography="ทาวน์โฮม" />
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject03.svg" typography="คอนโด" />
                     <BoxButtonSelection imgSrc="/src/images/vector/vectorproject04.svg" typography="อาคารพาณิชย์" />
-                    <BoxButtonSelection imgSrc="/src/images/vector/vectorproject04.svg" typography="อาคารพาณิชย์" />
-                    <BoxButtonSelection imgSrc="/src/images/vector/vectorproject04.svg" typography="อาคารพาณิชย์" />
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-start', overflowX: 'auto', pb: 0.5 }}>
                     <CardProject typography="Centro" />

@@ -15,6 +15,7 @@ import AgencySearch from '../pages/_newsPage/ApplyAgency/AgencySearch';
 import ApplyAgency from '../pages/_newsPage/ApplyAgency';
 import ApplyDeveloper from '../pages/_newsPage/ApplyDeveloper';
 import DeveloperSearch from '../pages/_newsPage/ApplyDeveloper/DeveloperSearch';
+import Filter from '../pages/_newsPage/Filter';
 
 export const MAIN_ROUTER = [
     {
@@ -71,6 +72,10 @@ export const MAIN_ROUTER = [
     {
         path: '/developer/search',
         element: <DeveloperSearch />
+    },
+    {
+        path: '/filter',
+        element: <Filter />
     }
 ];
 

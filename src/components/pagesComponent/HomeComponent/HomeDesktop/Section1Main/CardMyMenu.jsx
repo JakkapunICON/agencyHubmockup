@@ -22,5 +22,9 @@ const CardMyMenuStyled = styled(Box)(({ theme }) => ({
     height: '55px',
     borderRadius: '10px',
     padding: theme.spacing(3),
-    margin: theme.spacing(0.5)
+    margin: theme.spacing(0.5),
+    cursor: 'pointer',
+    ':hover': {
+        transform: 'scale(1.05)'
+    }
 }));
