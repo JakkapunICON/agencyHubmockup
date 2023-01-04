@@ -31,6 +31,7 @@ export const MAIN_ROUTER = [
         path: '/agencyHubmockup/pre-owned',
         element: <PreownedPage />
     },
+
     {
         path: '/agencyHubmockup/rent',
         element: <RentPage />

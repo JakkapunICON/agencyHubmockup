@@ -1,4 +1,5 @@
 import { Box, styled, useTheme, Button, Typography, CardMedia } from '@mui/material';
+import vector56 from '/src/images/vector/vector56.svg';
 
 function CardItemComponent3() {
     const theme = useTheme();
@@ -7,7 +8,7 @@ function CardItemComponent3() {
         <div>
             <CardItemComponent3Styled>
                 <Box sx={{ display: 'flex', justifyContent: 'start' }}>
-                    <CardMedia component="img" src="/src/images/vector/vector56.svg" sx={{ width: 16, mr: 1.5 }} />
+                    <CardMedia component="img" src={vector56} sx={{ width: 16, mr: 1.5 }} />
                     <Typography>อโศก - พระราม 9</Typography>
                 </Box>
             </CardItemComponent3Styled>

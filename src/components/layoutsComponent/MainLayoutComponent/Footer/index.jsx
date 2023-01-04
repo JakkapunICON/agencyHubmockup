@@ -1,6 +1,8 @@
 import { AppBar, Toolbar, Box, Typography, useTheme, CardMedia } from '@mui/material';
 import TypographyFooter from './TypographyFooter';
 
+import iconfooter01 from '/src/images/logo/iconfooter01.png';
+
 import { useLocation } from 'react-router-dom';
 
 function Footer() {
@@ -14,7 +16,7 @@ function Footer() {
             ) : ( */}
             <AppBar sx={{ background: theme.palette.primary.main }}>
                 <Toolbar variant="dense" sx={{ display: 'flex', justifyContent: 'center', minHeight: 75 }}>
-                    <CardMedia component="img" src="/src/images/logo/iconfooter01.png" sx={{ width: 331 }} />
+                    <CardMedia component="img" src={iconfooter01} sx={{ width: 331 }} />
                 </Toolbar>
             </AppBar>
             {/* )} */}

@@ -1,10 +1,12 @@
 import { Box, useTheme, styled, Typography, Button, CardMedia, InputBase } from '@mui/material';
 
+import homeVector from '/src/images/agency/homeVector.svg';
+
 function Maindeveloper() {
     const theme = useTheme();
     return (
         <BoxStyled>
-            <CardMedia component="img" src="/src/images/agency/homeVector.svg" sx={{ width: '206px', mb: 3 }} />
+            <CardMedia component="img" src={homeVector} sx={{ width: '206px', mb: 3 }} />
             <Typography sx={{ fontWeight: 600, fontSize: '24px', lineHeight: '33px', mb: 6 }}>Agency XXXXXXXX</Typography>
 
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>

@@ -6,16 +6,27 @@ export const HEADER_MENU = [
         href: '/agencyHubmockup/',
         title: 'หน้าแรก'
     },
+    // {
+    //     id: uuidv4(),
+    //     href: '/agencyHubmockup/pre-owned',
+    //     title: 'มือสอง'
+    // },
     {
         id: uuidv4(),
-        href: '/agencyHubmockup/pre-owned',
-        title: 'มือสอง'
+        href: '/agencyHubmockup/filter',
+        title: 'Filter'
     },
+    // {
+    //     id: uuidv4(),
+    //     href: '/agencyHubmockup/rent',
+    //     title: 'เช่า'
+    // },
     {
         id: uuidv4(),
-        href: '/agencyHubmockup/rent',
-        title: 'เช่า'
+        href: '/agencyHubmockup/mydev',
+        title: 'Mydev'
     },
+
     {
         id: uuidv4(),
         href: '/agencyHubmockup/about',

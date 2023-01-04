@@ -12,7 +12,14 @@ function DevProjectCardPrimary() {
             <Typography
                 component={RouterLink}
                 to="/agencyHubmockup/mydev/projectsearch"
-                sx={{ fontSize: '16px', fontWeight: 700, lineHeight: '20px' }}
+                sx={{
+                    fontSize: '16px',
+                    fontWeight: 700,
+                    lineHeight: '20px',
+                    ':hover': {
+                        transform: 'scale(1.2)'
+                    }
+                }}
             >
                 SEE MORE
             </Typography>

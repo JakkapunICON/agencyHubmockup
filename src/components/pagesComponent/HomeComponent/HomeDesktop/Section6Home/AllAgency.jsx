@@ -2,6 +2,8 @@ import { Box, CardMedia, styled, Typography, useTheme } from '@mui/material';
 
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 
+import vectorsection6_01 from '/src/images/vector/vectorsection6_01.svg';
+
 function AllAgency() {
     const theme = useTheme();
 
@@ -41,7 +43,7 @@ function AllAgency() {
                         }
                     }}
                 >
-                    <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
+                    <CardMedia component="img" src={vectorsection6_01} sx={{ width: 32, marginRight: theme.spacing(1) }} />
                     <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
                 </Box>
                 <Box
@@ -59,46 +61,7 @@ function AllAgency() {
                         }
                     }}
                 >
-                    <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
-                    <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
-                </Box>
-            </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: theme.spacing(2) }}>
-                <Box
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        border: '2px solid #0B1D26',
-                        borderRadius: '50px',
-                        width: '280px',
-                        height: '69px',
-                        marginRight: theme.spacing(1.5),
-                        cursor: 'pointer',
-                        ':hover': {
-                            transform: 'scale(1.05)'
-                        }
-                    }}
-                >
-                    <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
-                    <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
-                </Box>
-                <Box
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        border: '2px solid #0B1D26',
-                        borderRadius: '50px',
-                        width: '280px',
-                        height: '69px',
-                        cursor: 'pointer',
-                        ':hover': {
-                            transform: 'scale(1.05)'
-                        }
-                    }}
-                >
-                    <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
+                    <CardMedia component="img" src={vectorsection6_01} sx={{ width: 32, marginRight: theme.spacing(1) }} />
                     <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
                 </Box>
             </Box>
@@ -119,7 +82,7 @@ function AllAgency() {
                         }
                     }}
                 >
-                    <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
+                    <CardMedia component="img" src={vectorsection6_01} sx={{ width: 32, marginRight: theme.spacing(1) }} />
                     <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
                 </Box>
                 <Box
@@ -137,7 +100,7 @@ function AllAgency() {
                         }
                     }}
                 >
-                    <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
+                    <CardMedia component="img" src={vectorsection6_01} sx={{ width: 32, marginRight: theme.spacing(1) }} />
                     <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
                 </Box>
             </Box>
@@ -158,7 +121,7 @@ function AllAgency() {
                         }
                     }}
                 >
-                    <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
+                    <CardMedia component="img" src={vectorsection6_01} sx={{ width: 32, marginRight: theme.spacing(1) }} />
                     <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
                 </Box>
                 <Box
@@ -176,7 +139,46 @@ function AllAgency() {
                         }
                     }}
                 >
-                    <CardMedia component="img" src="/src/images/vector/vectorsection6_01.svg" sx={{ width: 32, marginRight: theme.spacing(1) }} />
+                    <CardMedia component="img" src={vectorsection6_01} sx={{ width: 32, marginRight: theme.spacing(1) }} />
+                    <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
+                </Box>
+            </Box>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: theme.spacing(2) }}>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        border: '2px solid #0B1D26',
+                        borderRadius: '50px',
+                        width: '280px',
+                        height: '69px',
+                        marginRight: theme.spacing(1.5),
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
+                    }}
+                >
+                    <CardMedia component="img" src={vectorsection6_01} sx={{ width: 32, marginRight: theme.spacing(1) }} />
+                    <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        border: '2px solid #0B1D26',
+                        borderRadius: '50px',
+                        width: '280px',
+                        height: '69px',
+                        cursor: 'pointer',
+                        ':hover': {
+                            transform: 'scale(1.05)'
+                        }
+                    }}
+                >
+                    <CardMedia component="img" src={vectorsection6_01} sx={{ width: 32, marginRight: theme.spacing(1) }} />
                     <Typography sx={{ fontWeight: 700, fontSize: '18px' }}>Agency 01</Typography>
                 </Box>
             </Box>

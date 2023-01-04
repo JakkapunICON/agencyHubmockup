@@ -1,5 +1,7 @@
 import { Box, useTheme, styled, Button, Typography, CardMedia } from '@mui/material';
 
+import vectoricon2808 from '/src/images/vector/vectoricon2808.svg';
+
 function CardItemComponent4() {
     return (
         <CardItemComponent4Styled sx={{ ml: -0.1, mt: 2.6 }}>
@@ -10,7 +12,7 @@ function CardItemComponent4() {
                 <Button sx={{ width: '113.93px', height: '42.9px', background: '#961619', borderRadius: '12px' }}>
                     <Typography sx={{ color: '#FFFFFF' }}>จอง</Typography>
                 </Button>
-                <CardMedia component="img" src="/src/images/vector/vectoricon2808.svg" sx={{ width: '43px' }} />
+                <CardMedia component="img" src={vectoricon2808} sx={{ width: '43px' }} />
             </CardItemComponent4INSIDEStyled>
         </CardItemComponent4Styled>
     );

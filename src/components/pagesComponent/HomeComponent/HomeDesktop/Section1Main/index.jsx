@@ -7,6 +7,13 @@ import CardNotification from './CardNotification';
 
 import user1 from '/src/images/content/user1.png';
 
+import vector1 from '/src/images/vector/vector1.svg';
+import vector2 from '/src/images/vector/vector2.svg';
+import vector3 from '/src/images/vector/vector3.svg';
+import vector4 from '/src/images/vector/vector4.svg';
+import vector5 from '/src/images/vector/vector5.svg';
+import vector6 from '/src/images/vector/vector6.svg';
+
 function Section1Main() {
     const theme = useTheme();
     return (
@@ -69,16 +76,16 @@ function Section1Main() {
                         <Typography sx={{ fontSize: '24px', fontWeight: 600, lineHeight: '33px' }}>My menu</Typography>
                         <CardAllMyMenu>
                             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                                <CardMyMenu imgSrc={'/src/images/vector/vector1.svg'} typography="My Profile" />
-                                <CardMyMenu imgSrc={'/src/images/vector/vector2.svg'} typography="Change Password" />
+                                <CardMyMenu imgSrc={vector1} typography="My Profile" />
+                                <CardMyMenu imgSrc={vector2} typography="Change Password" />
                             </Box>
                             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                                <CardMyMenu imgSrc={'/src/images/vector/vector3.svg'} typography="My Agency" />
-                                <CardMyMenu imgSrc={'/src/images/vector/vector4.svg'} typography="My Customer" />
+                                <CardMyMenu imgSrc={vector3} typography="My Agency" />
+                                <CardMyMenu imgSrc={vector4} typography="My Customer" />
                             </Box>
                             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                                <CardMyMenu imgSrc={'/src/images/vector/vector5.svg'} typography="Favorite Unite" />
-                                <CardMyMenu imgSrc={'/src/images/vector/vector6.svg'} typography="History" />
+                                <CardMyMenu imgSrc={vector5} typography="Favorite Unite" />
+                                <CardMyMenu imgSrc={vector6} typography="History" />
                             </Box>
                         </CardAllMyMenu>
                         <Typography sx={{ fontSize: '24px', fontWeight: 600, lineHeight: '33px' }}>Notification</Typography>

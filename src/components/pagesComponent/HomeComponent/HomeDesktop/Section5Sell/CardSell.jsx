@@ -2,31 +2,30 @@ import { Box, CardMedia, styled, Typography, Button, useTheme } from '@mui/mater
 import CardItemComponent3 from './CardItemComponent3';
 import CardItemComponent4 from './CardItemComponent4';
 
+import icon56 from '/src/images/content/icon56.png';
+import icon57 from '/src/images/content/icon57.png';
+
 function CardSell() {
     const theme = useTheme();
 
     return (
         <CardItemComponentStyled>
             <CardItemComponent1>
-                <CardMedia
-                    component="img"
-                    src="/src/images/content/icon56.png"
-                    sx={{ position: 'absolute', left: '15px', top: '0px', width: '68.37px' }}
-                />
-                <CardMedia component="img" src="/src/images/content/icon57.png" sx={{ width: '40px' }} />
+                <CardMedia component="img" src={icon56} sx={{ position: 'absolute', left: '15px', top: '0px', width: '68.37px' }} />
+                <CardMedia component="img" src={icon57} sx={{ width: '40px' }} />
             </CardItemComponent1>
             <CardItemComponent2>
                 <CardItemComponent2INSIDE>
-                    <CardMedia component="img" src="/src/images/content/icon57.png" sx={{ width: '30.56px' }} />
+                    <CardMedia component="img" src={icon57} sx={{ width: '30.56px' }} />
                 </CardItemComponent2INSIDE>
                 <CardItemComponent2INSIDE>
-                    <CardMedia component="img" src="/src/images/content/icon57.png" sx={{ width: '30.56px' }} />
+                    <CardMedia component="img" src={icon57} sx={{ width: '30.56px' }} />
                 </CardItemComponent2INSIDE>
                 <CardItemComponent2INSIDE>
-                    <CardMedia component="img" src="/src/images/content/icon57.png" sx={{ width: '30.56px' }} />
+                    <CardMedia component="img" src={icon57} sx={{ width: '30.56px' }} />
                 </CardItemComponent2INSIDE>
                 <CardItemComponent2INSIDE sx={{ mr: 0 }}>
-                    <CardMedia component="img" src="/src/images/content/icon57.png" sx={{ width: '30.56px' }} />
+                    <CardMedia component="img" src={icon57} sx={{ width: '30.56px' }} />
                 </CardItemComponent2INSIDE>
             </CardItemComponent2>
             <br />

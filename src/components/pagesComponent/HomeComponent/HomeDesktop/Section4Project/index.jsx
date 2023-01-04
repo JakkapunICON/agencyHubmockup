@@ -3,6 +3,11 @@ import { Box, styled, useTheme, Typography, CardMedia } from '@mui/material';
 import BoxButtonSelection from './BoxButtonSelection';
 import CardProject from './CardProject';
 
+import vectorproject01 from '/src/images/vector/vectorproject01.svg';
+import vectorproject02 from '/src/images/vector/vectorproject02.svg';
+import vectorproject03 from '/src/images/vector/vectorproject03.svg';
+import vectorproject04 from '/src/images/vector/vectorproject04.svg';
+
 function Section4Project() {
     const theme = useTheme();
 
@@ -14,11 +19,11 @@ function Section4Project() {
                     <Typography sx={{ fontSize: '25px' }}>SEE MORE</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-start', overflowX: 'auto', pb: 0.5 }}>
-                    <BoxButtonSelection imgSrc="/src/images/vector/vectorproject01.svg" typography="บ้านเดี่ยว" />
-                    <BoxButtonSelection imgSrc="/src/images/vector/vectorproject02.svg" typography="บ้านแฝด" />
-                    <BoxButtonSelection imgSrc="/src/images/vector/vectorproject02.svg" typography="ทาวน์โฮม" />
-                    <BoxButtonSelection imgSrc="/src/images/vector/vectorproject03.svg" typography="คอนโด" />
-                    <BoxButtonSelection imgSrc="/src/images/vector/vectorproject04.svg" typography="อาคารพาณิชย์" />
+                    <BoxButtonSelection imgSrc={vectorproject01} typography="บ้านเดี่ยว" />
+                    <BoxButtonSelection imgSrc={vectorproject02} typography="บ้านแฝด" />
+                    <BoxButtonSelection imgSrc={vectorproject02} typography="ทาวน์โฮม" />
+                    <BoxButtonSelection imgSrc={vectorproject03} typography="คอนโด" />
+                    <BoxButtonSelection imgSrc={vectorproject04} typography="อาคารพาณิชย์" />
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-start', overflowX: 'auto', pb: 0.5 }}>
                     <CardProject typography="Centro" />

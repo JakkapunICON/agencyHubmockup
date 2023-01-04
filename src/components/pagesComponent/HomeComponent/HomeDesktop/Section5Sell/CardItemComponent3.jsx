@@ -1,5 +1,10 @@
 import { Box, styled, useTheme, Button, Typography, CardMedia } from '@mui/material';
 
+import vector56 from '/src/images/vector/vector56.svg';
+import vector57 from '/src/images/vector/vector57.svg';
+
+import vectorprojectblue01 from '/src/images/vector/vectorprojectblue01.svg';
+
 function CardItemComponent3() {
     const theme = useTheme();
 
@@ -13,20 +18,20 @@ function CardItemComponent3() {
             </CardItemComponent3Styled>
             <CardItemComponent3Styled>
                 <Box sx={{ display: 'flex', justifyContent: 'start' }}>
-                    <CardMedia component="img" src="/src/images/vector/vector56.svg" sx={{ width: 16, mr: 0.5 }} />
+                    <CardMedia component="img" src={vector56} sx={{ width: 16, mr: 0.5 }} />
                     <Typography sx={{ mr: 1.5 }}>อโศก - พระราม 9</Typography>
-                    <CardMedia component="img" src="/src/images/vector/vector57.svg" sx={{ width: 16, mr: 0.5 }} />
+                    <CardMedia component="img" src={vector57} sx={{ width: 16, mr: 0.5 }} />
                     <Typography>ใกล้รถไฟฟ้า 3 สถานี</Typography>
                 </Box>
             </CardItemComponent3Styled>
             <CardItemComponent3Styled>
                 <Box sx={{ display: 'flex', justifyContent: 'start' }}>
                     <ButtonHomeStyled sx={{ mr: 1 }}>
-                        <CardMedia component="img" src="/src/images/vector/vectorprojectblue01.svg" sx={{ width: '14px', mr: 0.3 }} />
+                        <CardMedia component="img" src={vectorprojectblue01} sx={{ width: '14px', mr: 0.3 }} />
                         <Typography sx={{ fontWeight: 700, fontSize: 10, color: '#2F80ED' }}>บ้านเดี่ยว</Typography>
                     </ButtonHomeStyled>
                     <ButtonHomeStyled>
-                        <CardMedia component="img" src="/src/images/vector/vectorprojectblue01.svg" sx={{ width: '14px', mr: 0.3 }} />
+                        <CardMedia component="img" src={vectorprojectblue01} sx={{ width: '14px', mr: 0.3 }} />
                         <Typography sx={{ fontWeight: 700, fontSize: 10, color: '#2F80ED' }}>บ้านแฝด</Typography>
                     </ButtonHomeStyled>
                 </Box>

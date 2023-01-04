@@ -2,6 +2,8 @@ import { Box, CardMedia, Typography, useTheme } from '@mui/material';
 
 import { Link as RouterLink } from 'react-router-dom';
 
+import agency01 from '/src/images/content/agency01.png';
+
 function ItemDevMyAgency({ number }) {
     const theme = useTheme();
     return (
@@ -21,7 +23,7 @@ function ItemDevMyAgency({ number }) {
                 }
             }}
         >
-            <CardMedia component="img" src="/src/images/content/agency01.png" sx={{ width: 80, height: 80, mb: 1 }} />
+            <CardMedia component="img" src={agency01} sx={{ width: 80, height: 80, mb: 1 }} />
             <Typography>AGENCY {number}</Typography>
         </Box>
     );
