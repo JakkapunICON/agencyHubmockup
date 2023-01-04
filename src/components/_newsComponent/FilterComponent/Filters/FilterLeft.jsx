@@ -4,6 +4,8 @@ import { Link as RouterLink } from 'react-router-dom';
 
 import { Add as AddIcon, Search as SearchIcon } from '@mui/icons-material';
 
+import map from '/src/images/filter/map.png';
+
 function FilterLeft() {
     const theme = useTheme();
 
@@ -41,7 +43,7 @@ function FilterLeft() {
                 >
                     <CardMedia
                         component="img"
-                        src="/src/images/filter/map.png"
+                        src={map}
                         sx={{ position: 'absolute', left: 0, right: 0, width: '270px', height: '131px' }}
                     ></CardMedia>
                     <Typography

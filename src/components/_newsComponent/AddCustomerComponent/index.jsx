@@ -1,5 +1,6 @@
 import { Box, Typography, styled, useTheme, CardMedia, Button } from '@mui/material';
-import { height } from '@mui/system';
+
+import homeicon from '/src/images/customer/homeicon.png';
 
 function AddCustomerComponent() {
     const theme = useTheme();
@@ -20,7 +21,7 @@ function AddCustomerComponent() {
                         background: '#EEF2F4'
                     }}
                 >
-                    <CardMedia component="img" src="/src/images/customer/homeicon.png" sx={{ width: '205px' }} />
+                    <CardMedia component="img" src={homeicon} sx={{ width: '205px' }} />
                     <Box sx={{ display: 'flex', flexDirection: 'column', width: '250px', marginTop: theme.spacing(2) }}>
                         <Typography sx={{ marginBottom: theme.spacing(0.5) }}>Developer</Typography>
                         <select name="cars" id="cars" style={{ height: '35px' }}>

@@ -2,10 +2,12 @@ import SectionMain02 from '../../_publicComponent/SectionMain02';
 
 import { styled, useTheme, Box } from '@mui/material';
 
+import imgMain01 from '/src/images/developer/imgMain01.png';
+
 function ApplyDeveloperComponent() {
     return (
         <DeveloperComponentStyled>
-            <SectionMain02 src="/src/images/developer/imgMain01.png" page="developer" />
+            <SectionMain02 src={imgMain01} page="developer" />
         </DeveloperComponentStyled>
     );
 }

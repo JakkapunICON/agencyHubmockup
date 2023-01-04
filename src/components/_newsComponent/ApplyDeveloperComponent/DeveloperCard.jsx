@@ -2,10 +2,12 @@ import { CardMedia, AppBar, Box, InputBase, Toolbar, Typography, styled, useThem
 
 import { Link as RouterLink } from 'react-router-dom';
 
+import developer01 from '/src/images/developer/developer01.png';
+
 function DevloperCard() {
     return (
         <CardStyled component={RouterLink} to="/agencyHubmockup/developer/apply">
-            <CardMedia component="img" src="/src/images/developer/developer01.png" sx={{ width: '108.28px', mb: 1 }} />
+            <CardMedia component="img" src={developer01} sx={{ width: '108.28px', mb: 1 }} />
             <Typography>developer 01</Typography>
         </CardStyled>
     );

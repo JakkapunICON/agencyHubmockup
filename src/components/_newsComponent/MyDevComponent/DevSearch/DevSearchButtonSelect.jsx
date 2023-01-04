@@ -1,5 +1,7 @@
 import { Box, useTheme, styled, CardMedia, Typography } from '@mui/material';
 
+import vectorproject01 from '/src/images/vector/vectorproject01.svg';
+
 function DevSearchButtonSelect({ sx }) {
     const theme = useTheme();
 
@@ -18,7 +20,7 @@ function DevSearchButtonSelect({ sx }) {
                 ...sx
             }}
         >
-            <CardMedia component="img" src="/src/images/vector/vectorproject01.svg" alt="" sx={{ width: 31, marginRight: theme.spacing(2) }} />
+            <CardMedia component="img" src={vectorproject01} alt="" sx={{ width: 31, marginRight: theme.spacing(2) }} />
             <Typography sx={{ fontWeight: 700 }}>บ้านเดี่ยว</Typography>
         </Box>
     );

@@ -2,10 +2,12 @@ import { CardMedia, AppBar, Box, InputBase, Toolbar, Typography, styled, useThem
 
 import { Link as RouterLink } from 'react-router-dom';
 
+import home2 from '/src/images/dev/home2.png';
+
 function DevProjectSearchComponentCard() {
     return (
-        <CardStyled component={RouterLink} to="/" sx={{ textDecoration: 'none' }}>
-            <CardMedia component="img" src="/src/images/dev/home2.png" sx={{ width: '50px', mr: 2 }} />
+        <CardStyled component={RouterLink} to="/agencyHubmockup" sx={{ textDecoration: 'none' }}>
+            <CardMedia component="img" src={home2} sx={{ width: '50px', mr: 2 }} />
             <Typography>xxxxxxxxxxxxx</Typography>
         </CardStyled>
     );

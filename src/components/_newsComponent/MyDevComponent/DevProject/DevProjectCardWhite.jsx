@@ -1,15 +1,13 @@
 import { Box, CardMedia, Grid, styled, Typography, useTheme } from '@mui/material';
 
+import iconvector01 from '/src/images/dev/iconvector01.svg';
+
 function DevProjectCardWhite() {
     const theme = useTheme();
 
     return (
         <CardWhite>
-            <CardMedia
-                component="img"
-                src="/src/images/dev/iconvector01.svg"
-                sx={{ position: 'absolute', width: '31px', left: '35px', bottom: '24px' }}
-            />
+            <CardMedia component="img" src={iconvector01} sx={{ position: 'absolute', width: '31px', left: '35px', bottom: '24px' }} />
             <Typography sx={{ position: 'absolute', fontWeight: 700, fontSize: '18px', left: '90px', bottom: '26px' }}>xxxxxxxxxxx</Typography>
         </CardWhite>
     );

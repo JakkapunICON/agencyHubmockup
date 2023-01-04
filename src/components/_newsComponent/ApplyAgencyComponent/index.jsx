@@ -2,10 +2,12 @@ import SectionMain02 from '../../_publicComponent/SectionMain02';
 
 import { styled, useTheme, Box } from '@mui/material';
 
+import iconmain01 from '/src/images/agency/iconmain01.png';
+
 function ApplyAgencyComponent() {
     return (
         <AgencyComponentStyled>
-            <SectionMain02 src="/src/images/agency/iconmain01.png" page="agency" />
+            <SectionMain02 src={iconmain01} page="agency" />
         </AgencyComponentStyled>
     );
 }
